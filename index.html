@@ -191,16 +191,23 @@
       border-radius: 18px;
       overflow: hidden;
       border: 1px solid rgba(255, 255, 255, 0.2);
-      background: linear-gradient(
-        120deg,
-        rgba(255,255,255,0.25),
-        rgba(255,255,255,0.05) 40%,
-        transparent 60%
-      );
+      background: rgba(255, 255, 255, 0.03);
       backdrop-filter: blur(6px);
       -webkit-backdrop-filter: blur(6px); 
       padding: 18px;
       box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    }
+    .heroAside::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+
+      background: linear-gradient(
+        120deg,
+        rgba(255,255,255,0.2),
+        transparent 50%
+      );
+      pointer-events: none;
     }
 
     .asideTitle {
