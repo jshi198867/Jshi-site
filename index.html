@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>匠實未來企業</title>
+  <title>匠實水電工程</title>
   <style>
     :root {
       --primary: #0b6bff;
@@ -59,25 +59,14 @@
       letter-spacing: 0.6px;
     }
 
-    .logo {
+    .logoImg {
       width: 42px;
       height: 42px;
       border-radius: 12px;
-      background: radial-gradient(16px 16px at 30% 20%, rgba(255, 255, 255, 0.35), transparent 55%),
-        linear-gradient(135deg, rgba(11, 107, 255, 0.9), rgba(0, 255, 171, 0.78));
-      box-shadow: 0 10px 30px rgba(11, 107, 255, 0.26);
-      border: 1px solid rgba(255, 255, 255, 0.12);
-      position: relative;
-    }
-
-    .logo:after {
-      content: "\1F527"; /* 🔧 */
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      font-size: 18px;
-      filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.5));
+      object-fit: contain;
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      background: rgba(255, 255, 255, 0.02);
+      box-shadow: 0 10px 30px rgba(11, 107, 255, 0.18);
     }
 
     .navLinks {
@@ -102,7 +91,7 @@
     .btn {
       display: inline-flex;
       align-items: center;
-      justify-content: center;
+      justify-users: center;
       gap: 8px;
       padding: 10px 14px;
       border-radius: 12px;
@@ -324,6 +313,27 @@
       .split { grid-template-columns: 1fr; }
     }
 
+    .brandGrid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 10px;
+    }
+
+    @media (max-width: 860px) {
+      .brandGrid { grid-template-columns: 1fr; }
+    }
+
+    .brandImg {
+      width: 100%;
+      height: 260px;
+      border-radius: 16px;
+      object-fit: contain;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      background: rgba(0, 0, 0, 0.28);
+      padding: 12px;
+    }
+
     .footer {
       padding: 26px 0;
       background: linear-gradient(180deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6));
@@ -352,7 +362,7 @@
     <div class="container">
       <div class="navInner">
         <div class="brand">
-          <div class="logo" aria-hidden="true"></div>
+          <img class="logoImg" src="EC630E6A-5030-4736-9536-1CAF3F308B44.PNG" alt="匠實 Logo" />
           <div>
             匠實水電工程
             <div style="font-weight:600;font-size:12px;opacity:.78;margin-top:2px;">水電｜弱電｜監視器</div>
@@ -360,6 +370,7 @@
         </div>
 
         <div class="navLinks" aria-label="網站導覽">
+          <a href="#brand">品牌</a>
           <a href="#services">服務</a>
           <a href="#process">流程</a>
           <a href="#cases">案例</a>
@@ -389,7 +400,8 @@
               <a class="btn" href="#services">了解服務</a>
             </div>
             <div class="note">
-              🔔 圖片：此版型目前先用一張示意照片（Unsplash），你上線前只要把 HTML 裡 <code>https://images.unsplash.com/...418e</code> 換成你自己的照片網址即可。
+              🔔 圖片：目前網站先用示意照片（Unsplash 以及你給的 Logo/名片檔案名）。<br>
+              你只要把檔案放到 repo 裡（名稱要一樣），網站就會顯示你的 Logo 和名片。
             </div>
           </div>
 
@@ -408,6 +420,30 @@
               （你可在聯絡區塊補上你的 LINE、電話）
             </div>
           </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="brand" class="section">
+      <div class="container">
+        <div class="sectionHead">
+          <h2 class="h2">Logo & 名片</h2>
+          <p class="hint">你給的檔案會直接出現在這裡</p>
+        </div>
+
+        <div class="brandGrid">
+          <div class="card" style="padding:14px;">
+            <h3 class="cardTitle">Logo</h3>
+            <img class="brandImg" src="EC630E6A-5030-4736-9536-1CAF3F308B44.PNG" alt="匠實 Logo" />
+          </div>
+          <div class="card" style="padding:14px;">
+            <h3 class="cardTitle">名片</h3>
+            <img class="brandImg" src="匠實水電.JPG" alt="匠實名片" />
+          </div>
+        </div>
+
+        <div class="note">
+          如果你要雙面名片，可以再把 <code>IMG_8842.jpg</code> 放進 repo，並把第二張名片也顯示出來。
         </div>
       </div>
     </section>
@@ -532,8 +568,8 @@
                 可傳：現場照片、影片、平面圖（選填），我們會回覆估價與工期。
               </p>
               <div style="display:flex;gap:10px;flex-wrap:wrap;">
-                <a class="btn btnPrimary" href="https://lin.ee/B3JPolS" target="_blank">LINE</a>
-                <a class="btn" href="tel:+886901186988" target="_blank">電話</a>
+                <a class="btn btnPrimary" href="https://line.me/R/ti/p/~" target="_blank">LINE</a>
+                <a class="btn" href="tel:+886" target="_blank">電話</a>
               </div>
               <div class="small">
                 提醒：上線前記得把 LINE 連結改成你自己的 ID 或官方帳號的加好友連結，電話也改成你自己的。
