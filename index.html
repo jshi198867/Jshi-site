@@ -93,20 +93,32 @@
       text-transform: uppercase;
       text-decoration: none;
     }
+    .navLinkstel{
+      display: flex;
+      align-items: center;
+      gap: 40px;
+    }
+    .navLinkstel a {
+      font-family: "Zen Kaku Gothic New","Noto Sans TC", sans-serif;
+      font-weight: 500;
+      font-size: 14px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
     @media (max-width: 768px) {
       .navLinks {
         gap: 16px;          /* 👈 間距縮小 */
-        font-size: 14px;    /* 👈 字縮小（超重要🔥） */
+            /* 👈 字縮小（超重要🔥） */
       }
       .navLinks a {
-      /*
-      padding: 8px 10px;
-      border-radius: 10px;
-      border: 1px solid transparent;
-      */
-       
         font-size: 12px;
-   
+      }
+      .navLinkstel{
+        gap: 16px; 
+      }
+      .navLinkstel a {
+        font-size: 14px;
       }
       
     }
@@ -427,8 +439,9 @@
           <a href="#cases">案例</a>
           <a href="#contact">聯絡</a>
         </div>
-
-        <a class="btn btnPrimary" href="#contact">立即聯絡</a>
+        <div class="navLinkstel" aria-label="網站導覽">
+          <a class="btn btnPrimary" href="#contact">立即聯絡</a>
+        </div>
       </div>
     </div>
   </header>
