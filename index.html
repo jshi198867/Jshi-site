@@ -114,7 +114,7 @@
       .navLinks a {
         font-size: 12px;
       }
-      .navLinkstel{
+      .navLinkstel {
         gap: 20px; 
       }
       .navLinkstel a {
@@ -149,11 +149,26 @@
     }
 
     .btn:hover { transform: translateY(-1px); }
-
-    . {
-      border-color: rgba(11, 107, 255, 0.6);
-      background: linear-gradient(135deg, rgba(11, 107, 255, 0.85), rgba(0, 255, 171, 0.62));
-      box-shadow: 0 12px 35px rgba(11, 107, 255, 0.25);
+    .btntel {
+      display: inline-flex;
+      align-items: center;
+      justify-users: center;
+      gap: 8px;
+      padding: 10px 14px;
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02));
+      color: var(--text);
+      cursor: pointer;
+      transition: transform 0.15s ease, background 0.2s ease;
+      text-decoration: none;
+    } 
+    @media (max-width: 768px) {
+      .btntel {
+        max-width: 28px;      /* 👈 限制最大寬度 */
+        width: 100%;           /* 👈 讓它填滿但不超過 */
+        justify-content: center; /* 👈 文字置中（順便修正你錯字🔥） */
+      }
     }
 
     /* Hero */
@@ -442,7 +457,7 @@
           <a href="#contact">聯絡</a>
         </div>
         <div class="navLinkstel" aria-label="網站導覽">
-          <a class="btn" href="#contact">立即聯絡</a>
+          <a class="btntel" href="#contact">立即聯絡</a>
         </div>
       </div>
     </div>
