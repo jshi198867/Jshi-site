@@ -367,12 +367,26 @@
       font-size: 18px;
       letter-spacing: 1px;
     }
+    
     .brandSub {
       font-family: "Noto Sans TC", sans-serif;
       font-weight: 500;
       font-size: 12px;
       opacity: 0.7;
       margin-top: 2px;
+    }
+    @media (max-width: 768px) {
+      .brandTitle {
+        font-size: 16px; /* 👈 手機標題縮小 */
+      }
+
+      .brandSub {
+        font-size: 11px; /* 👈 副標縮小 */
+      }
+
+      .brand img {
+        height: 40px !important; /* 👈 logo 稍微縮小 */
+      }
     }
   </style>
 </head>
