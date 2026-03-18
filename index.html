@@ -152,7 +152,7 @@
     .btntel {
       display: inline-flex;
       align-items: center;
-      justify-users: center;
+      justify-content: center;
       gap: 8px;
       padding: 10px 14px;
       border-radius: 12px;
@@ -165,9 +165,10 @@
     } 
     @media (max-width: 768px) {
       .btntel {
-        max-width: 120px;      /* 👈 限制最大寬度 */
-        width: 100%;           /* 👈 讓它填滿但不超過 */
-        justify-content: center; /* 👈 文字置中（順便修正你錯字🔥） */
+        width: 60px;           /* 👈 固定寬 */
+        text-align: center;
+        line-height: 1.2;
+        white-space: normal;  /* 👈 文字置中（順便修正你錯字🔥） */
       }
     }
 
