@@ -480,6 +480,14 @@
       position: relative;
       background: url("adjusted_office.jpg") center/cover no-repeat;
     }
+    #contact::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(255, 255, 255, 0.1); /* 霧白感 */
+      backdrop-filter: blur(1px); /* 高級感 */
+      z-index: 0;
+    }
 
   </style>
 </head>
