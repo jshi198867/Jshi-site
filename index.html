@@ -454,6 +454,15 @@
         position: relative;
         background: url("70696836-D068-4365-AC3D-152766EE91D2.png") center/cover no-repeat;
     }
+    #services::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(255, 255, 255, 0.85); /* 霧白感 */
+      backdrop-filter: blur(6px); /* 高級感 */
+      z-index: 0;
+    }
+
   </style>
 </head>
 <body>
