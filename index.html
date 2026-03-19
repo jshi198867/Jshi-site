@@ -178,7 +178,7 @@
     /* Hero */
     .hero {
       position: relative;
-      min-height: 70vh;
+      min-height: 78vh;
       border-bottom: 1px solid var(--line);
       overflow: hidden;
     }
@@ -187,7 +187,8 @@
       position: absolute;
       inset: 0;
       background: url("8b64f2cd3ed88457629b565c50c97a4f75b2d9c26d61f022d11e9e7112dc1b8b.png") center 35% / cover no-repeat;
-      filter: brightness(1.1) contrast(0.85) saturate(0.8);
+      filter: brightness(1.02) contrast(0.88) saturate(0.82);
+    }
       
       /*filter: sepia(0.15) brightness(0.9);
       
@@ -201,7 +202,7 @@
       content: "";
       position: absolute;
       inset: 0;
-      background: rgba(255, 255, 255, 0.4);
+      background: rgba(255, 255, 255, 0.34);
       backdrop-filter: blur(3px);
     }
 
@@ -251,11 +252,14 @@
     }
 
     .heroTitle {
-      font-size: clamp(25px, 4vw, 42px);
-      line-height: 1.08;
-      margin-right: 180px;
+      font-size: clamp(30px, 4vw, 54px);
+      line-height: 1.12;
+      margin: 0 110px 0 0;
       text-align: right;
       font-family: "Noto Serif TC", serif;
+      font-weight: 700;
+      color: #2e261f;
+      text-shadow: 0 10px 30px rgba(255,255,255,0.18);
     }
 
     .heroSub {
