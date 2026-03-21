@@ -599,6 +599,54 @@
         height: 40px !important; /* 👈 logo 稍微縮小 */
       }
     }
+    .contactBox, .infoBox {
+      backdrop-filter: blur(12px);
+      background: rgba(255,255,255,0.08);
+      border-radius: 16px;
+      padding: 20px;
+    }
+    
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 6px;
+      margin-bottom: 12px;
+      border-radius: 8px;
+      border: 1px solid rgba(255,255,255,0.2);
+      background: rgba(255,255,255,0.05);
+      color: white;
+    }
+    
+    .btnPrimary {
+      width: 100%;
+      padding: 12px;
+      border-radius: 10px;
+      background: #0b6bff;
+      color: white;
+      border: none;
+    }
+    
+    .quickContact {
+      display: flex;
+      gap: 10px;
+      margin-top: 12px;
+    }
+    
+    .btnLine {
+      flex: 1;
+      background: #06c755;
+      padding: 10px;
+      text-align: center;
+      border-radius: 8px;
+    }
+    
+    .btnTel {
+      flex: 1;
+      background: #333;
+      padding: 10px;
+      text-align: center;
+      border-radius: 8px;
+    }
     #services {
         position: relative;
         background: url("70696836-D068-4365-AC3D-152766EE91D2.png") center/cover no-repeat;
@@ -848,42 +896,52 @@
     -->
 
     <section id="contact" class="section">
-      <div class="container">
-        <div class="split">
-          <div>
-            <div class="sectionHead" style="margin-bottom:10px;">
-              <h2 class="h2" style="margin:0;">聯絡匠實</h2>
-            </div>
-            <p class="cardP" style="margin:0 0 12px;">
-              直接留你的聯絡方式（例如 LINE/電話）。你也可以補上服務區域、營業時間、或加一個表單。
-            </p>
-            <div class="card" style="padding:18px;">
-              <h3 class="cardTitle" style="margin:0 0 8px;">線上估價：先傳照片最快</h3>
-              <p class="cardP" style="margin:0 0 10px;">
-                可傳：現場照片、影片、平面圖（選填），我們會回覆估價與工期。
-              </p>
-              <div style="display:flex;gap:10px;flex-wrap:wrap;">
-                <a class="btn btnPrimary" href="https://lin.ee/B3JPolS" target="_blank">LINE</a>
-                <a class="btn" href="tel:+886901186988" target="_blank">電話</a>
-              </div>
-              <div class="small">
-                提醒：上線前記得把 LINE 連結改成你自己的 ID 或官方帳號的加好友連結，電話也改成你自己的。
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <h3 class="cardTitle">想加什麼功能？</h3>
-            <p class="cardP">
-              這版型可以再加：
-            </p>
-            <ul class="cardP" style="margin:10px 0 0;padding-left:18px;line-height:1.85;">
-              <li>Google 表單</li>
-              <li>LINE 官方帳號加好友按鈕</li>
-              <li>工程小知識（提升信任）</li>
-              <li>FAQ + 常見故障排除</li>
-            </ul>
-          </div>
+      <div class="card contactBox">
+        <h3>🚀 快速估價（30秒搞定）</h3>
+        <p>拍照上傳，我們快速回覆價格與工期</p>
+      
+        <form action="https://docs.google.com/forms/d/e/你的表單ID/formResponse" method="POST" target="_blank">
+          
+          <label>姓名</label>
+          <input type="text" name="entry.123456" placeholder="王小明" required>
+      
+          <label>聯絡方式（LINE / 電話）</label>
+          <input type="text" name="entry.234567" placeholder="LINE ID 或電話" required>
+      
+          <label>服務地區</label>
+          <input type="text" name="entry.345678" placeholder="台北 / 宜蘭">
+      
+          <label>需求描述</label>
+          <textarea name="entry.456789" placeholder="例如：馬桶漏水、插座沒電"></textarea>
+      
+          <label>上傳照片（可選）</label>
+          <input type="file" name="file">
+      
+          <button type="submit" class="btnPrimary">📩 送出估價</button>
+        </form>
+      
+        <div class="quickContact">
+          <a href="https://line.me/ti/p/你的LINE" class="btnLine">LINE 詢問</a>
+          <a href="tel:0901186988" class="btnTel">直接撥打</a>
         </div>
+      </div>
+      <div class="card infoBox">
+        <h3>💡 為什麼選擇匠實？</h3>
+      
+        <ul>
+          <li>✔ 現場經驗豐富（水電＋弱電整合）</li>
+          <li>✔ 回覆快速（通常30分鐘內）</li>
+          <li>✔ 報價透明，不亂加價</li>
+          <li>✔ 可配合設計師 / 商辦 / 住家</li>
+        </ul>
+      
+        <h4>📌 可加功能</h4>
+        <ul>
+          <li>📄 Google 表單（自動收單）</li>
+          <li>💬 LINE 官方帳號一鍵加好友</li>
+          <li>📚 工程知識（增加信任）</li>
+          <li>❓ FAQ 常見問題</li>
+        </ul>
       </div>
     </section>
   </main>
