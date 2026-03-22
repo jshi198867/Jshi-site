@@ -220,6 +220,181 @@
       .heroInner { grid-template-columns: 1fr; padding-top: 72px; }
       . { display: none; }
     }
+    /*     about  */
+    .aboutSection {
+      padding: 80px 0;
+    }
+    
+    .aboutHero {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 28px;
+      align-items: center;
+      margin-bottom: 32px;
+    }
+    
+    .aboutEyebrow {
+      font-size: 13px;
+      letter-spacing: 2px;
+      color: rgba(255,255,255,0.65);
+      margin-bottom: 10px;
+    }
+    
+    .aboutText h2 {
+      font-size: 36px;
+      margin-bottom: 14px;
+    }
+    
+    .aboutLead {
+      font-size: 18px;
+      line-height: 1.8;
+      color: rgba(255,255,255,0.92);
+      margin-bottom: 14px;
+    }
+    
+    .aboutDesc {
+      font-size: 15px;
+      line-height: 1.9;
+      color: rgba(255,255,255,0.72);
+    }
+    
+    .aboutImageCard {
+      border-radius: 20px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.08);
+      background: rgba(255,255,255,0.04);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.22);
+    }
+    
+    .aboutImageCard img {
+      width: 100%;
+      height: 100%;
+      min-height: 320px;
+      display: block;
+      object-fit: cover;
+    }
+    
+    .aboutGrid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-bottom: 40px;
+    }
+    
+    .aboutCard {
+      padding: 22px;
+      border-radius: 18px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.08);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+    }
+    
+    .aboutCard h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+    
+    .aboutCard p {
+      font-size: 15px;
+      line-height: 1.8;
+      color: rgba(255,255,255,0.72);
+    }
+    
+    .aboutProcess {
+      margin-top: 24px;
+      margin-bottom: 40px;
+    }
+    
+    .processGrid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+    
+    .processItem {
+      padding: 20px;
+      border-radius: 18px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      text-align: left;
+    }
+    
+    .processNum {
+      display: inline-block;
+      font-size: 13px;
+      font-weight: 700;
+      color: #0b6bff;
+      margin-bottom: 10px;
+    }
+    
+    .processItem h4 {
+      font-size: 17px;
+      margin-bottom: 8px;
+      color: #fff;
+    }
+    
+    .processItem p {
+      font-size: 14px;
+      line-height: 1.8;
+      color: rgba(255,255,255,0.7);
+    }
+    
+    .aboutQuote {
+      padding: 28px 22px;
+      border-radius: 20px;
+      text-align: center;
+      background: linear-gradient(135deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+    
+    .aboutQuote p {
+      font-size: 24px;
+      line-height: 1.7;
+      color: rgba(255,255,255,0.95);
+      margin: 0;
+    }
+    
+    /* 手機版 */
+    @media (max-width: 900px) {
+      .aboutHero {
+        grid-template-columns: 1fr;
+      }
+    
+      .aboutGrid {
+        grid-template-columns: 1fr;
+      }
+    
+      .processGrid {
+        grid-template-columns: 1fr 1fr;
+      }
+    
+      .aboutText h2 {
+        font-size: 30px;
+      }
+    
+      .aboutQuote p {
+        font-size: 20px;
+      }
+    }
+    
+    @media (max-width: 640px) {
+      .processGrid {
+        grid-template-columns: 1fr;
+      }
+    
+      .aboutLead {
+        font-size: 16px;
+      }
+    
+      .aboutDesc,
+      .aboutCard p,
+      .processItem p {
+        font-size: 14px;
+      }
+    }
+/*       */
+    
 
     .kicker {
       display: inline-flex;
@@ -768,24 +943,90 @@
 
     <section id="brand" class="section">
       <div class="container">
-        <div class="sectionHead">
-          <h2 class="h2">Logo & 名片</h2>
-          <p class="hint">你給的檔案會直接出現在這裡</p>
-        </div>
-
-        <div class="brandGrid">
-          <div class="card" style="padding:14px;">
-            <h3 class="cardTitle">Logo</h3>
-            <img class="brandImg" src="/images/icons/" alt="匠實 Logo" />
+        <div class="aboutHero">
+          <div class="aboutText">
+            <p class="aboutEyebrow">ABOUT JIANG SHI</p>
+            <h2>關於匠實</h2>
+            <p class="aboutLead">
+              匠實專注於水電、弱電與基礎設備整合，重視施工品質、現場細節與後續使用的穩定性。
+              我們相信，好的工程不只是能用，更要整齊、耐用、好維護。
+            </p>
+            <p class="aboutDesc">
+              從現場評估、配線規劃、設備安裝到後續調整，
+              每一個環節都以「清楚、穩定、負責」為原則。
+              不追求花俏，追求的是讓業主真正放心的成果。
+            </p>
           </div>
-          <div class="card" style="padding:14px;">
-            <h3 class="cardTitle">名片</h3>
-            <img class="brandImg" src="匠實水電.JPG" alt="匠實名片" />
+    
+          <div class="aboutImageCard">
+            <img src="/images/about-main.jpg" alt="匠實工程現場形象照片">
           </div>
         </div>
-
-        <div class="note">
-          如果你要雙面名片，可以再把 <code>IMG_8842.jpg</code> 放進 repo，並把第二張名片也顯示出來。
+    
+        <div class="aboutGrid">
+          <div class="aboutCard">
+            <h3>我們重視的事</h3>
+            <p>
+              不只是把工程做完，而是把細節做好。包含線路安排、設備配置、
+              現場整潔、後續維修便利性，都是施工的一部分。
+            </p>
+          </div>
+    
+          <div class="aboutCard">
+            <h3>服務方向</h3>
+            <p>
+              提供水電修繕、弱電配置、插座照明規劃、監視器與對講設備安裝，
+              也可依現場需求進行基礎整合與改善建議。
+            </p>
+          </div>
+    
+          <div class="aboutCard">
+            <h3>施工態度</h3>
+            <p>
+              現場先評估、再施工；能說清楚的地方先說清楚，
+              能提前避免的問題，就不留到完工後才處理。
+            </p>
+          </div>
+        </div>
+    
+        <div class="aboutProcess">
+          <div class="sectionHead">
+            <h3 class="h3">服務流程</h3>
+            <p class="hint">每一步清楚，合作更安心</p>
+          </div>
+    
+          <div class="processGrid">
+            <div class="processItem">
+              <span class="processNum">01</span>
+              <h4>需求了解</h4>
+              <p>先了解空間、使用需求與現場條件。</p>
+            </div>
+    
+            <div class="processItem">
+              <span class="processNum">02</span>
+              <h4>現場評估</h4>
+              <p>依實際狀況確認施工方式、材料與配置。</p>
+            </div>
+    
+            <div class="processItem">
+              <span class="processNum">03</span>
+              <h4>規劃施工</h4>
+              <p>依需求安排工序，注重品質與現場整潔。</p>
+            </div>
+    
+            <div class="processItem">
+              <span class="processNum">04</span>
+              <h4>測試交付</h4>
+              <p>完成後進行確認與測試，讓使用更安心。</p>
+            </div>
+          </div>
+        </div>
+    
+        <div class="aboutQuote">
+          <p>
+            我們做的不只是水電工程，<br>
+            而是讓空間運作更穩定、更安心的一部分。
+          </p>
         </div>
       </div>
     </section>
