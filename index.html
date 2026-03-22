@@ -260,19 +260,46 @@
     /* 主施工照 */
     .aboutHeroImage {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
       gap: 20px;
     }
+    /* 左 */
     .imgLeft {
-      width: 45%;
-      max-width: 400px;
-    }
-    .imgRight {
-      width: 45%;
-      max-width: 400px;
+      width: 25%;
     }
     
+    /* 中（主圖🔥） */
+    .imgMiddle {
+      width: 40%;
+      transform: scale(1.05);
+      z-index: 2;
+    }
+    
+    /* 右 */
+    .imgRight {
+      width: 25%;
+    }
+    
+    /* 共用樣式 */
+    .imgLeft,
+    .imgMiddle,
+    .imgRight {
+      border-radius: 16px;
+      object-fit: cover;
+    }
+    @media (max-width: 768px) {
+      .aboutImages {
+        flex-direction: column;
+      }
+    
+      .imgLeft,
+      .imgMiddle,
+      .imgRight {
+        width: 100%;
+      }
+    }
+        
     .aboutHeroImage img {
       width: 100%;
       min-height: 380px;
@@ -1038,6 +1065,7 @@
         <!-- ② 主施工照：只放一張也可以 -->
         <div class="aboutHeroImage">
           <img src="IMG_9947.jpeg" class="imgLeft">
+          <img src="F280537C-57D5-467B-B341-D779BAFE208B.png" class="imgMiddle">
           <img src="IMG_1566.JPG" alt="匠實施工現場照片" class="imgRight">
           <div class="aboutHeroOverlay"> 
             <p>整齊，不只是美觀，是施工品質的基本。</p>
