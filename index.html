@@ -644,38 +644,30 @@
       gap: 10px;
       margin-top: 12px;
     }
-    
+    .btnTel,
     .btnLine {
       flex: none;
-      padding: 10px 16px;
-      background: #06c755;
+      background: none;
       text-align: center;
       border-radius: 8px;
+      padding: 0;
+      border: none;
       transition: all 0.2s ease;
     }
-    .btnLine img {
-      width: 30px;
-      height: 30px;
+
+    .btnLine img,
+    .btnTel img {
+      width: 28px;
+      height: 28px;
       object-fit: contain;
     }
+
     .btnLine:hover {
       transform: translateY(-3px) scale(1.02);
       box-shadow: 0 10px 25px rgba(11, 107, 255, 0.3);
     }
     
-    .btnTel {
-      flex: none;
-      padding: 10px 16px;
-      background: #333;
-      text-align: center;
-      border-radius: 8px;
-      transition: all 0.2s ease;
-    }
-    .btnTel img {
-      width: 18px;
-      height: 18px;
-      object-fit: contain;
-    }
+
     .btnTel:hover {
       transform: translateY(-3px) scale(1.02);
       box-shadow: 0 10px 25px rgba(11, 107, 255, 0.3);
@@ -956,11 +948,9 @@
         <div class="quickContact">
           <a href="https://lin.ee/6shWpHZ" class="btnLine">
             <img src="—Pngtree— chat icon_3584855.png" alt="LINE">
-            LINE 詢問
           </a>
           <a href="tel:0901186988" class="btnTel">
             <img src="—Pngtree—retro rotary telephone icon vector_23137925.png" alt="tel">
-            直接撥打
           </a>
         </div>
       </div>
