@@ -558,6 +558,34 @@
       font-weight: 500;
     }
     @media (max-width: 768px) {
+      .aboutCertWrap {
+      grid-template-columns: 1fr; /* 👈 變單欄 */
+      gap: 16px;
+      padding: 16px;
+    }
+  
+    .aboutCertText {
+      text-align: left; /* 或 center 看你喜歡 */
+    }
+  
+    .aboutCertText h3 {
+      font-size: 22px; /* 👈 稍微縮 */
+    }
+  
+    .aboutCertText p {
+      font-size: 14px;
+      line-height: 1.7;
+    }
+  
+    .certCard {
+      width: 100%;
+    }
+  
+    .certCard img {
+      width: 100%;
+      height: auto; /* 👈 等比例 */
+      object-fit: cover;
+    }
 
       /* 三個重點 */
       .aboutGrid {
