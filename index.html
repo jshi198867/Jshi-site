@@ -530,17 +530,7 @@
         0 2px 4px rgba(0,0,0,0.5),
         0 4px 10px rgba(0,0,0,0.4);
     }
-    @media (max-width: 768px) {
-      .processGrid {
-        grid-template-columns: 1fr;
-        gap: 14px;
-      }
     
-      .processItem {
-        padding: 16px;
-        border-radius: 14px;
-      }
-    }
     
     /* 收尾 */
     .aboutQuote {
@@ -566,6 +556,53 @@
     .subText {
       color: rgba(255,255,255,0.75);
       font-weight: 500;
+    }
+    @media (max-width: 768px) {
+
+      /* 三個重點 */
+      .aboutGrid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px; /* 👈 縮小間距 */
+      }
+    
+      .aboutCard {
+        padding: 12px; /* 👈 縮小卡片 */
+      }
+    
+      .aboutCard h3 {
+        font-size: 14px; /* 👈 縮字 */
+      }
+    
+      .aboutCard p {
+        font-size: 12px;
+        line-height: 1.5;
+      }
+    
+    
+      /* 流程 */
+      .processGrid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 8px;
+      }
+    
+      .processItem {
+        padding: 12px;
+      }
+    
+      .processNum {
+        font-size: 14px;
+      }
+    
+      .processItem h4 {
+        font-size: 14px;
+        letter-spacing: 0.5px;
+      }
+    
+      .processItem p {
+        font-size: 11px;
+        line-height: 1.4;
+      }
+    
     }
     
 
