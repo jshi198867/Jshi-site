@@ -117,52 +117,41 @@
     @media (max-width: 768px) {
       .navInner {
         display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 12px;
+        align-items: center;
+        justify-content: space-between;
       }
     
+      /* 隱藏公司名 */
+      .brandTitle,
+      .brandSub {
+        display: none;
+      }
+    
+      /* Logo */
+      .logo {
+        height: 44px; /* 👈 手機縮小一點 */
+      }
+    
+      /* 品牌區不要撐太大 */
       .brand {
         display: flex;
         align-items: center;
-        gap: 10px;
-        width: 100%;
       }
     
-      .logo {
-        height: 56px;
-        width: auto;
-      }
-    
-      .brandTitle {
-        font-size: 18px;
-        line-height: 1.2;
-      }
-    
-      .brandSub {
-        font-size: 13px;
-        line-height: 1.4;
-      }
-    
+      /* 導覽 */
       .navLinks {
         display: flex;
-        flex-wrap: wrap;
-        gap: 10px 14px;
-        width: 100%;
+        gap: 12px;
       }
     
       .navLinks a {
-        font-size: 14px;
+        font-size: 13px;
+        white-space: nowrap; /* 👈 不換行 */
       }
     
+      /* 右邊按鈕先關掉（不然會爆） */
       .navLinkstel {
-        width: 100%;
-      }
-    
-      .btnttel {
-        display: inline-flex;
-        justify-content: center;
-        width: 100%;
+        display: none;
       }
     }
 
