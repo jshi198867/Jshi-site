@@ -854,11 +854,14 @@
       text-shadow: 0 6px 20px rgba(255,255,255,0.18);
     }
     
+
+
+    /* 桌機版：服務項目 */
     .servicesGrid {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 24px;
-      align-items: start;
+      align-items: stretch; /* 比 start 更穩 */
     }
     
     .serviceGlassCard {
@@ -870,6 +873,8 @@
       box-shadow: 0 16px 40px rgba(0,0,0,0.10);
       backdrop-filter: blur(14px);
       -webkit-backdrop-filter: blur(14px);
+    
+      overflow: hidden; /* 防止內容意外撐出去 */
     }
     
     .serviceGlassCard h3 {
@@ -878,6 +883,7 @@
       font-weight: 900;
       color: #2d2925;
       letter-spacing: 1px;
+      text-align: left;
     }
     
     .serviceGlassCard ul {
@@ -894,6 +900,7 @@
       line-height: 1.8;
       color: #4c4640;
       font-weight: 500;
+      text-align: left;
     }
     
     .serviceGlassCard li::before {
@@ -905,6 +912,8 @@
       font-size: 20px;
       line-height: 1.6;
     }
+
+    
     @media (max-width: 768px) {
 
       .servicesGrid {
