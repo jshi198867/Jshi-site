@@ -227,7 +227,7 @@
     
     .aboutIntro {
       max-width: 880px;
-      margin: -40px auto 32px;
+      margin: 0 auto 32px;
       text-align: center;
     }
     
@@ -264,9 +264,9 @@
       align-items: center;
       gap: 20px;
       width: 100%;
-      max-width: 250px;   /* 👈 限制整塊寬度 */
-      margin-left: 20px;   /* 👈 控制大小 */
-      height: 180px;     /* 固定高度（整齊） */
+     /*  max-width: 250px;   👈 限制整塊寬度 */
+    /*   margin-left: 20px;   👈 控制大小 */
+    /*  height: 180px;      固定高度（整齊） */
       object-fit: cover;
     }
     /* 左 */
@@ -310,6 +310,11 @@
       min-height: 380px;
       display: block;
       object-fit: cover;
+      width: 100%;
+      max-width: 400px;   /* 控制大小 */
+      height: auto;       /* ❗ 關鍵：不要壓縮 */
+      display: block;
+      border-radius: 12px;
     }
     
     .aboutHeroOverlay {
