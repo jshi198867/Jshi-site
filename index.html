@@ -363,11 +363,10 @@
       }
     
       .aboutHeroImage img {
-        flex: 1;          /* 👈 平均分 */
-        min-width: 0;     /* 👈 防爆 */
-        height: auto;     /* 👈 關鍵：等比例 */
-        width: 100%;      /* 👈 填滿格子 */
-        object-fit: cover;    /* 👈 不要固定高度 */
+        flex: 1;
+        min-width: 0;
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
       }
     }
     
