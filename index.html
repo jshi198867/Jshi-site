@@ -360,13 +360,17 @@
       .aboutHeroImage {
         display: flex;
         gap: 6px;        /* 👈 間距縮小 */
+        justify-content: center;
       }
     
       .aboutHeroImage img {
         flex: 1;
         min-width: 0;
-        aspect-ratio: 4 / 3;
+    
+        aspect-ratio: 4 / 2.5;   /* 👈 比 4/3 更扁（高度變短） */
         object-fit: cover;
+    
+        display: block;
       }
     }
     
