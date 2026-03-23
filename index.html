@@ -115,20 +115,55 @@
       text-decoration: none;
     }
     @media (max-width: 768px) {
+      .navInner {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+      }
+    
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+      }
+    
+      .logo {
+        height: 56px;
+        width: auto;
+      }
+    
+      .brandTitle {
+        font-size: 18px;
+        line-height: 1.2;
+      }
+    
+      .brandSub {
+        font-size: 13px;
+        line-height: 1.4;
+      }
+    
       .navLinks {
-        gap: 16px;          /* 👈 間距縮小 */
-            /* 👈 字縮小（超重要🔥） */
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px 14px;
+        width: 100%;
       }
+    
       .navLinks a {
-        font-size: 12px;
-      }
-      .navLinkstel {
-        gap: 20px; 
-      }
-      .navLinkstel a {
         font-size: 14px;
       }
-      
+    
+      .navLinkstel {
+        width: 100%;
+      }
+    
+      .btnttel {
+        display: inline-flex;
+        justify-content: center;
+        width: 100%;
+      }
     }
 
     .navLinks a:hover {
