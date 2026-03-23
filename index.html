@@ -429,7 +429,9 @@
     .processItem {
       padding: 20px;
       border-radius: 18px;
-      background: rgba(255,255,255,0.04);
+      background: rgba(0, 0, 0, 0.06); /* 👈 深色透明 */
+      backdrop-filter: blur(4px);     /* 👈 模糊背景 */
+      -webkit-backdrop-filter: blur(4px); /* Safari用 */
       border: 1px solid rgba(255,255,255,0.08);
     }
     
