@@ -670,15 +670,18 @@
       }
     
       .heroTitle {
-        text-align: right;
-        margin: 60px 150px 0 0; /* 👈 只留一點右邊距 */
+        width: 80%;                 /* 控制整體寬度 */
+        margin: 60px auto 0;        /* 先置中 */
+        transform: translateX(10%); /* 👈 整體往右推 */
+        text-align: right;          /* 文字靠右 */
         font-size: 24px;
         line-height: 1.5;
         letter-spacing: 2px;
       }
+    
       .line2 {
         display: inline-block;
-        margin-left: 100px; /* 👈 控制右移 */
+        margin-left: 20px; /* 👈 第二行再微偏右 */
       }
     }
   
