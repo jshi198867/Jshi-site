@@ -217,7 +217,9 @@
     }
     @media (max-width: 768px) {
       .hero {
-        height: 260px; /* 👈 直接控制高度 */
+        height: auto;
+        aspect-ratio: 16 / 9;
+        overflow: hidden;
       }
       .heroBg {
         background-position: center 50%;
