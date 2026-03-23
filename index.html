@@ -658,6 +658,21 @@
       color: #2e261f;
       text-shadow: 0 10px 30px rgba(255,255,255,0.18);
     }
+    .mobile-break {
+      display: none;
+    }
+    
+    @media (max-width: 768px) {
+      .mobile-break {
+        display: block;
+      }
+    
+      .heroTitle {
+        text-align: center;
+        line-height: 1.5;
+        font-size: 34px;
+      }
+    }
 
     .heroSub {
       font-size: 15px;
@@ -1212,7 +1227,9 @@
       <div class="container">
         <div class="heroInner">
           <div>
-            <h1 class="heroTitle">匠 於 當 下 ， 實 現 未 來</h1>
+            <h1 class="heroTitle">
+              匠 於 當 下 ，<span class="mobile-break"></span> 實 現 未 來
+            </h1>
          <!--   <p class="heroSub">
             </p>
             
