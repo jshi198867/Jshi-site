@@ -217,17 +217,34 @@
     }
     @media (max-width: 768px) {
       .hero {
+        position: relative;
+        width: 100%;
+        min-height: 260px;
         height: auto;
-        aspect-ratio: 16 / 9;
         overflow: hidden;
       }
-      .heroBg {
-        background-position: center 50%;
+    
+      .heroBg,
+      .heroGradient {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
       }
     
-      .heroBg::after {
-        background: rgba(255, 255, 255, 0.2);
-        backdrop-filter: blur(2px);
+      .heroBg {
+        background-position: center 50%;
+        background-size: cover;
+      }
+    
+      .hero .container {
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        max-width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        box-sizing: border-box;
       }
     }
 
