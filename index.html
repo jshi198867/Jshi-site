@@ -136,13 +136,17 @@
       /* 第二排（按鈕） */
       .navLinkstel {
         order: 3;
-        display: flex;       /* 👈 顯示出來 */
+        display: flex;              /* 👈 橫向關鍵 */
+        flex-direction: row;        /* 👈 明確橫排 */
+        justify-content: flex-start; 
+        gap: 10px;                  /* 👈 按鈕間距 */
         width: 100%;
-        justify-content: flex-start; /* 👈 靠左 */
         margin-top: 10px;
       }
     
       .btnttel {
+        display: inline-flex;       /* 👈 不撐滿 */
+        width: auto;                /* 👈 重點：不要 100% */
         padding: 8px 14px;
         font-size: 14px;
       }
