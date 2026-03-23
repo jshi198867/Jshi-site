@@ -920,35 +920,45 @@
         display: flex;
         gap: 6px;
       }
-      
+    
       .serviceGlassCard {
-        text-align: left !important;
         flex: 1 1 0;
         min-width: 0;
-        padding: 10px 8px;   /* 👈 左右再縮一點 */
+        padding: 10px 6px;   /* 👈 再縮一點讓內容更左 */
         border-radius: 12px;
         overflow: hidden;
       }
-      
+    
       .serviceGlassCard h3 {
-        font-size: 13px;     /* 👈 再小一點 */
+        font-size: 13px;
         margin-bottom: 6px;
-        text-align: center;  /* 👈 標題還是置中（好看） */
+        text-align: center;
       }
-      
+    
       .serviceGlassCard ul {
-        text-align: left;
-        padding-left: 12px;  /* 👈 更靠左（原本16太右） */
+        list-style: none;      /* 👈 關鍵：拿掉預設點 */
+        padding-left: 0;       /* 👈 真正貼左 */
         margin: 0;
       }
-      
+    
       .serviceGlassCard li {
+        position: relative;
+        padding-left: 10px;    /* 👈 自己控制縮排 */
+        font-size: 10px;
+        line-height: 1.35;
+        margin-bottom: 2px;
         text-align: left;
-        font-size: 10px;     /* 👈 再縮一點 */
-        line-height: 1.35;   /* 👈 緊一點 */
-        margin-bottom: 2px;  /* 👈 行距更密 */
       }
-          
+    
+      .serviceGlassCard li::before {
+        content: "•";
+        position: absolute;
+        left: 0;
+        top: 0;
+        font-size: 12px;
+        color: #b9956b;
+        line-height: 1.3;
+      }  
     }
 
    
