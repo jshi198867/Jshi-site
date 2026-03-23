@@ -905,13 +905,38 @@
       font-size: 20px;
       line-height: 1.6;
     }
-    @media (max-width: 980px) {
+    @media (max-width: 768px) {
+
       .servicesGrid {
-        grid-template-columns: 1fr;
+        display: flex;
+        gap: 6px;
       }
+    
       .serviceGlassCard {
-        min-height: auto;
+        flex: 1 1 0;
+        min-width: 0;
+    
+        padding: 10px;          /* 👈 縮卡片 */
+        border-radius: 12px;
+    
+        overflow: hidden;
       }
+    
+      .serviceGlassCard h3 {
+        font-size: 14px;        /* 👈 縮標題 */
+        margin-bottom: 6px;
+      }
+    
+      .serviceGlassCard ul {
+        padding-left: 16px;
+        margin: 0;
+      }
+    
+      .serviceGlassCard li {
+        font-size: 11px;        /* 👈 縮內容 */
+        line-height: 1.4;
+      }
+    
     }
 
     @media (max-width: 768px) {
