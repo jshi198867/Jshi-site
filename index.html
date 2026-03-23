@@ -530,6 +530,17 @@
         0 2px 4px rgba(0,0,0,0.5),
         0 4px 10px rgba(0,0,0,0.4);
     }
+    @media (max-width: 768px) {
+      .processGrid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+      }
+    
+      .processItem {
+        padding: 16px;
+        border-radius: 14px;
+      }
+    }
     
     /* 收尾 */
     .aboutQuote {
@@ -1200,12 +1211,12 @@
           </p>
         </div>
     
-        <!-- ② 主施工照：只放一張也可以 -->
+        <!-- ② 主施工照：只放一張也可以 
         <div class="aboutHeroImage">
           <img src="IMG_9947.jpeg" class="imgLeft">
           <img src="F280537C-57D5-467B-B341-D779BAFE208B.png" class="imgMiddle">
           <img src="IMG_1566.JPG" alt="匠實施工現場照片" class="imgRight">
-        
+        -->
         </div>
     
         <!-- ③ 證書區塊：放中段最剛好 -->
