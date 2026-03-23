@@ -343,21 +343,28 @@
       .aboutHeroImage {
         display: flex;
         gap: 6px;
-    
         width: 100%;
-        max-width: 100%;
         margin: 0 auto;
-    
         overflow: hidden;
       }
     
-      .aboutHeroImage img {
-        flex: 1;
+      .aboutHeroImage img,
+      .imgLeft,
+      .imgMiddle,
+      .imgRight {
+        flex: 1 1 0;
         min-width: 0;
-        aspect-ratio: 1 / 1;   /* 👈 比 4/3 更扁（高度變短） */
-        object-fit: cover;
     
+        width: 100% !important;
+        max-width: none !important;
+    
+        height: auto !important;
+        aspect-ratio: 4 / 3 !important;  /* 👈 比正方形更大更好看 */
+    
+        object-fit: cover;
         display: block;
+    
+        transform: none !important;
       }
     }
     
