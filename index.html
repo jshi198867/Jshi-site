@@ -1203,9 +1203,27 @@
       position: relative;
       z-index: 1;
     }
+    
 
   </style>
 </head>
+<script>
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+  const inputs = this.querySelectorAll("input, textarea");
+
+  for (let input of inputs) {
+    if (!input.value.trim()) {
+      e.preventDefault();
+
+      const label = input.previousElementSibling.innerText;
+      alert("⚠️ 請填寫：「" + label + "」");
+
+      input.focus();
+      return;
+    }
+  }
+});
+</script>
 <body>
   <header class="nav">
     <div class="navInner">
@@ -1506,7 +1524,7 @@
         <h3>線上評估</h3>
         <p>提供現場照片，快速評估報價與工期</p>
       
-        <form action="https://docs.google.com/forms/d/e/1FAIpQLSc3FZPsI4xZP6_s1V2yj9asqLVOJObmis7cg2_zGuDivDSRgg/formResponse" method="POST" target="_blank">
+        <form id="contactForm" action="https://docs.google.com/forms/d/e/1FAIpQLSc3FZPsI4xZP6_s1V2yj9asqLVOJObmis7cg2_zGuDivDSRgg/formResponse" method="POST" target="_blank">
 
           <label>姓名/公司名稱</label>
           <input type="text" name="entry.1213225268" placeholder="輸入您的名稱" required>
